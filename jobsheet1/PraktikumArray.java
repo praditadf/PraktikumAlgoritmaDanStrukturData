@@ -7,10 +7,9 @@ public class PraktikumArray {
         sc.nextLine();
         String [] namaMk = new String[jumlahMk];
         int [] nilaiAngka = new int[jumlahMk];
-        String [] nilaiHuruf = new String[7];
+        String [] nilaiHuruf = new String[jumlahMk];
         int []bobotSks = new int[jumlahMk];
-        float []bobotNilai = new float[7];
-        float [] jumlahNilai = new float[jumlahMk]; 
+        float []bobotNilai = new float[jumlahMk]; 
         int jumlahSKS = 0;
         float ip, totalNilai = 0;
 
@@ -61,14 +60,13 @@ public class PraktikumArray {
         System.out.println("=======================");
         System.out.println("Hasil Konversi Nilai");
         System.out.println("=======================");
-        System.out.printf("%-30s  %-12s  %-12s  %-12s \n", "MK", "Nilai Angka", "Nilai Huruf", "BobotNilai");
+        System.out.printf("%-45s  %-12s  %-12s  %-12s \n", "MK", "Nilai Angka", "Nilai Huruf", "BobotNilai");
         for (int m = 0; m < jumlahMk; m++) {
-            System.out.printf("%-30s  %-12s  %-12s  %-12s \n",namaMk[m], nilaiAngka[m], nilaiHuruf[m], bobotNilai[m]);       
+            System.out.printf("%-45s  %-12s  %-12s  %-12s \n",namaMk[m], nilaiAngka[m], nilaiHuruf[m], bobotNilai[m]);       
         }
         for (int n = 0; n < jumlahMk; n++) {
-            jumlahNilai[n] += (float) bobotNilai[n]*bobotSks[n];
-            totalNilai += jumlahNilai[n];
-        }
+            totalNilai +=  bobotNilai[n]*bobotSks[n];
+            }
         ip = totalNilai / jumlahSKS;
         System.out.println("=======================");
         System.out.printf("IP : %.2f",ip);
