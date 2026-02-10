@@ -16,9 +16,9 @@ public class PraktikumPemilihan {
         String nilaiHuruf, status;
         boolean nilaiValid = false;
         if (tugas >= 0 && tugas <= 100) {
-            if (kuis >= 0 && tugas <= 100) {
-                if (uts >= 0 && tugas <= 100) {
-                    if (uas >= 0 && tugas <= 100) {
+            if (kuis >= 0 && kuis <= 100) {
+                if (uts >= 0 && uts <= 100) {
+                    if (uas >= 0 && uas <= 100) {
                         nilaiValid = true;
                     }
                 }
