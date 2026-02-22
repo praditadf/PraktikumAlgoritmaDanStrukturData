@@ -3,6 +3,17 @@ public class Mahasiswa01 {
     String nim;
     String kelas;
     double ipk;
+
+    public Mahasiswa01() {
+        
+    }
+
+    public Mahasiswa01(String nm, String nim, double ipk, String kls) {
+        nama = nm;
+        this.nim = nim;
+        this.ipk = ipk;
+        kelas = kls;
+    }
     void tampilkanInformasi() {
         System.out.println("Nama: "+nama);
         System.out.println("NIM: "+nim);
