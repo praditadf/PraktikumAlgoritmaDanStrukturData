@@ -1,0 +1,16 @@
+package jobsheetCM1;
+
+public class Buku {
+    String kodeBuku, judul;
+    int tahunTerbit;
+
+    Buku (String kode, String judul, int tahun) {
+        kodeBuku = kode;
+        this.judul = judul;
+        tahunTerbit = tahun;
+    }
+
+    void tampiilBuku () {
+        
+    }
+}
