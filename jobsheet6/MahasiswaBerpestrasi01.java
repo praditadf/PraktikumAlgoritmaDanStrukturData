@@ -99,4 +99,20 @@ public class MahasiswaBerpestrasi01 {
         }
         return -1;
     }
+
+    void Search (double cari, int left, int right) {
+        int mid;
+        while (right >= left) {
+        mid = (left + right) / 2;
+            if (cari == listMhs[mid].ipk) {
+                System.out.println(listMhs[mid].ipk);
+            }
+            else if (listMhs[mid].ipk < cari) {
+                right = mid -1;
+            }
+            else {
+                left = mid +1;
+            }
+        }   
+    }
 }
