@@ -8,7 +8,7 @@ public class BinaryTreeArray01 {
         this.dataMahasiswa = new Mahasiswa01[10];
     }
 
-    void populateData (Mahasiswa01 dataMhs[], int idxLast) {
+    void populateData(Mahasiswa01 dataMhs[], int idxLast) {
         this.dataMahasiswa = dataMhs;
         this.idxLast = idxLast;
     }
@@ -16,12 +16,11 @@ public class BinaryTreeArray01 {
     void traverseInOrder(int idxStart) {
         if (idxStart <= idxLast) {
             if (dataMahasiswa[idxStart] != null) {
-                traverseInOrder(2*idxStart+1);
+                traverseInOrder(2 * idxStart + 1);
                 dataMahasiswa[idxStart].tampilInformasi();
-                traverseInOrder(2*idxStart+2);
+                traverseInOrder(2 * idxStart + 2);
             }
         }
     }
 
-    
 }
